@@ -416,8 +416,8 @@ this.ScenarioInitialize(scenarioInfo);
             }
             string[] tagsOfScenario = @__tags;
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            argumentsOfScenario.Add("BirthDate", birthDate);
-            argumentsOfScenario.Add("Amount", amount);
+            argumentsOfScenario.Add("birthDate", birthDate);
+            argumentsOfScenario.Add("amount", amount);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Get a Quote for Man - Couple Smoker", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 80
 this.ScenarioInitialize(scenarioInfo);

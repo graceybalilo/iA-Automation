@@ -10,7 +10,7 @@ namespace AiSpecflowAutomation.Pages.GetQuote
 
         private const string PageUrl = "https://ia.ca/individuals";
         private const string PageTitle = "iA Financial Group - Industrial Alliance | Insurance and Savings";
-        private readonly string _actualTitle;
+        private string _actualTitle;
         private readonly By _details = By.XPath("//p[contains(text(),'Use them to guide you through your savings and ins')]");
         private readonly By _getQuote = By.XPath("//span[@class='label']");
         private readonly By _lifeInsurance = By.XPath("//li[contains(text(), 'Life insurance')]");
@@ -23,11 +23,12 @@ namespace AiSpecflowAutomation.Pages.GetQuote
         public IaHomepage(IWebDriver driver)
         {
             this._driver = driver;
-            _actualTitle = driver.Title;
         }
 
         public IaHomepage Verify() 
         {
+            _actualTitle = _driver.Title;
+
             Assert.AreEqual(true, _actualTitle.Contains(PageTitle), "Page title is incorrect!"); 
             return this;
         }

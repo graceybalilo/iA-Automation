@@ -83,11 +83,11 @@ Scenario: Get a Quote for Man - Couple Smoker
 	And I select Life Insurance from the dropdown list
 	And I click Determine your Needs from the pop-up
 	And I click the needed fields for couple smoker man and calculate my term life insurance
-	And I populate the required fields on the page using "<BirthDate>", "<Amount>"
+	And I populate the required fields on the page using "<birthDate>", "<amount>"
 	When I click the Calculate button
 	Then I should be able to see the calculation of my insurance based from my inputs
 	Examples: 
-	| BirthDate  | Amount      |
+	| birthDate  | amount      |
 	| 01-05-1988 | 30000       |
 
 	@Test

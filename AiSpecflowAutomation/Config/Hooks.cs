@@ -14,7 +14,7 @@ namespace AiSpecflowAutomation.Config
         private static ExtentHtmlReporter _reporter = default!;
         private static ExtentTest _scenario = default!;
         private static ExtentTest _featureName = default!;
-        private static readonly string _basePath = AppDomain.CurrentDomain.BaseDirectory.Replace(@"\bin\Debug\net6.0", "");
+        private static readonly string _basePath = AppDomain.CurrentDomain.BaseDirectory.Replace(@"\bin\Debug\net7.0", "");
         public Hooks(DriverHelper helper)
         {
             _helper = helper;
@@ -60,7 +60,7 @@ namespace AiSpecflowAutomation.Config
         public void InsertReportingSteps(ScenarioContext scenarioContext)
         {
             var stepType = ScenarioStepContext.Current.StepInfo.StepDefinitionType.ToString();
-            var path = @$"{_basePath}\Report\Screenshots\";
+            var path = @$"{_basePath}\Report\Screenshots";
             var timeStamp = $"{DateTime.Now.Month}{DateTime.Now.Day}{DateTime.Now.Year}{DateTime.Now.Hour}{DateTime.Now.Minute}{DateTime.Now.Second}";
             var finalPath = @$"{path}\Image_{timeStamp}.png";
 

@@ -10912,24 +10912,26 @@
     ]
   },
   "packageFolders": {
-    "/Users/me/.nuget/packages/": {}
+    "C:\\Users\\grace.joy.balilo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/me/RiderProjects/iA-Automation/AiSpecflowAutomation/AiSpecflowAutomation.csproj",
+      "projectUniqueName": "C:\\Users\\grace.joy.balilo\\Source\\Repos\\iA-Automation\\AiSpecflowAutomation\\AiSpecflowAutomation.csproj",
       "projectName": "AiSpecflowAutomation",
-      "projectPath": "/Users/me/RiderProjects/iA-Automation/AiSpecflowAutomation/AiSpecflowAutomation.csproj",
-      "packagesPath": "/Users/me/.nuget/packages/",
-      "outputPath": "/Users/me/RiderProjects/iA-Automation/AiSpecflowAutomation/obj/",
+      "projectPath": "C:\\Users\\grace.joy.balilo\\Source\\Repos\\iA-Automation\\AiSpecflowAutomation\\AiSpecflowAutomation.csproj",
+      "packagesPath": "C:\\Users\\grace.joy.balilo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\grace.joy.balilo\\Source\\Repos\\iA-Automation\\AiSpecflowAutomation\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/me/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\grace.joy.balilo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -11009,7 +11011,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/Users/me/.dotnet/sdk/7.0.200/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
